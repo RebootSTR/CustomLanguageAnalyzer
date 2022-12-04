@@ -1,0 +1,17 @@
+boolean
+do
+else
+end
+end_else
+false
+for
+if
+input
+integer
+let
+loop
+output
+real
+then
+true
+while

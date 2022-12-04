@@ -1,0 +1,16 @@
+  k,n,sum:integer;
+
+  input(n)
+  sum=0
+
+  for (let i = 0d; i <= n; i = i+1d) { input(k) ; sum = sum + k }
+  let avgSum = sum / n
+  output(avgSum)
+
+  i = 0d
+  do while i <= n { input(k) ; sum = sum + k; i = i + 1d } loop
+  avgSum = sum / n
+  output(avgSum)
+
+  if avgSum>777o then output(true) else output(false) end_else
+end
