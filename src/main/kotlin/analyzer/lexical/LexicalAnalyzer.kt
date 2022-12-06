@@ -3,6 +3,7 @@ package analyzer.lexical
 import dictionary.Dictionary
 import analyzer.lexical.exceptions.LexicalInternalException
 import analyzer.lexical.exceptions.CharNotAllowedException
+import analyzer.lexical.exceptions.NotANumberException
 import analyzer.lexical.exceptions.SignFormatException
 import logger.Logger
 import model.Grammar
@@ -161,7 +162,7 @@ class LexicalAnalyzer(
             saveToResult(Grammar(Tables.SIGN, index))
             stack.clear()
         } else {
-            throw NumberFormatException("'${stack.get()}' + '$char' не является разделителем")
+            throw NotANumberException("'${stack.get()}' + '$char' не является разделителем")
         }
     }
 
@@ -251,7 +252,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -277,7 +278,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -333,7 +334,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -347,7 +348,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -391,7 +392,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -417,7 +418,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -437,7 +438,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -451,7 +452,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -488,7 +489,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -502,7 +503,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -529,7 +530,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -544,7 +545,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -558,7 +559,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -579,7 +580,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }
@@ -598,7 +599,7 @@ class LexicalAnalyzer(
             }
 
             else -> {
-                throw NumberFormatException("'${stack.get()}' + '$char' не является числом")
+                throw NotANumberException("'${stack.get()}' + '$char' не является числом")
             }
         }
     }

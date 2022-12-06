@@ -4,10 +4,7 @@ import exceptions.LexicalException
 import exceptions.SyntaxException
 import analyzer.lexical.LexicalAnalyzer
 import analyzer.lexical.LexicalFileProvider
-import analyzer.lexical.exceptions.CharNotAllowedException
-import analyzer.lexical.exceptions.LexicalInternalException
-import analyzer.lexical.exceptions.SignFormatException
-import analyzer.lexical.exceptions.UnknownSymbolException
+import analyzer.lexical.exceptions.*
 import analyzer.semantic.SemanticAnalyzer
 import analyzer.semantic.SemanticFileProvider
 import analyzer.semantic.exceptions.MultiInitException
@@ -78,7 +75,7 @@ class Main {
             } catch (ex: CharNotAllowedException) {
                 logger.info(Dictionary.error(ex.message))
                 throw ex
-            } catch (ex: NumberFormatException) {
+            } catch (ex: NotANumberException) {
                 logger.info(Dictionary.error(ex.message))
                 throw ex
             } catch (ex: SignFormatException) {
